@@ -1,0 +1,12 @@
+.formulario-login{
+    padding-top: 30px;
+}
+
+.erro-margem{
+    padding-top: 30px;
+}
+
+/* ajusta o tamanho da janela do sweetalert2 */
+.swal2-popup {
+    font-size: 1.6rem !important;
+}
