@@ -56,10 +56,10 @@ $estado         = $rows['estado'];
         <div class="row formulario-login">
             <div class="col-md-offset-2 col-md-8">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">Editar Usuário</div>
+                    <div class="panel-heading">Editar Cliente</div>
                     <div class="panel-body">
                         <!-- formulario -->
-                        <form method="POST" action="include/editarCliente.php">
+                        <form>
                             <div class="form-group">
                                 <label>Nome</label>
                                 <input type="text" class="form-control" id="nome" name="nome" placeholder="nome" value="<?= $nome ?>">
@@ -95,9 +95,8 @@ $estado         = $rows['estado'];
                                   <option value="Rio de Janeiro">Rio de Janeiro</option>
                                 </select>
                             </div>
-                            <input type="hidden" id="id_cliente" name="id_cliente" value="<?= $id_cliente ?>">
-                            
-                            <button type="button" class="btn btn-success" id="btn-enviar" name="btn-enviar">Editar</button>
+                            <input type="hidden" id="id_cliente" name="id_cliente" value="<?= $id_cliente ?>">                            
+                            <button type="button" class="btn btn-success" id="btn-editar-cliente" name="btn-editar-cliente">Editar</button>
                         </form>
                         <!-- /formulario -->
                     </div>
@@ -112,5 +111,6 @@ $estado         = $rows['estado'];
 
     <!-- Scripts JS -->
     <?php include('include/scripts.php'); ?>
+    <script src="js/editarCliente.js"></script>
   </body>
 </html>

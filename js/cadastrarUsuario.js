@@ -12,7 +12,6 @@ $(document).ready(function() {
             senha: $("#senha").val(),
             conf_senha: $("#conf_senha").val(),
             administrador: $("#administrador").val()
-
         },
                             
         function(data) {
@@ -77,7 +76,7 @@ $(document).ready(function() {
                 });
 
                 setTimeout(function(){
-                    window.location = 'cadastrarUsuario.php';
+                    window.location = 'visualizarUsuario.php';
                 }, 3000);
             
             }
