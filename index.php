@@ -27,7 +27,7 @@ if( (isset($_SESSION['login'])) && ($_SESSION['login'] == true) ){
 
         <!-- row do formulario de login -->
         <div class="row formulario-login">
-            <div class="col-md-offset-2 col-md-8">
+            <div class="col-md-offset-4 col-md-4 col-xs-offset-2 col-xs-8" style="margin-top: 50px;">
                 <div class="panel panel-primary">
                     <div class="panel-heading">Formulário de Login</div>
                     <div class="panel-body">
@@ -44,6 +44,7 @@ if( (isset($_SESSION['login'])) && ($_SESSION['login'] == true) ){
                             <button type="button" class="btn btn-success" name="btn-enviar" id="btn-enviar">Enviar</button>
                         </form>
                         <!-- /formulario -->
+                        <br/><p><strong>Não tem cadastro? <a href="formulario.php" style="color: red;">Cadastre-se aqui</a></strong></p>
                     </div>
                 </div>
             </div>
