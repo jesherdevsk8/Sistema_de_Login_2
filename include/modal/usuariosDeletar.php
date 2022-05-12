@@ -99,7 +99,7 @@ $qtd_ids    = count($ids);
 
       $('#btn-enviar').click(function() {
 
-        $.post("include/ajax/usuariosDeletar", { 
+        $.post("include/ajax/usuariosDeletar.php", { 
 
           ids: $("#ids").val()
 

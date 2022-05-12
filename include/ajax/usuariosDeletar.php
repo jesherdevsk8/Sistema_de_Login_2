@@ -13,7 +13,7 @@ include('../../config/config.php');
 protegeLogin();
 
 // cria a data atual
-$data_atual = date("Y-m-d");
+date_default_timezone_set('America/Sao_Paulo');
 
 // recebe os ids dos usuarios
 $ids_string = $_POST['ids'];
