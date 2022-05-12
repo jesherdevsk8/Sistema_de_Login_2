@@ -13,7 +13,7 @@ include('../../config/config.php');
 protegeLogin();
 
 // cria a data atual
-date_default_timezone_set('America/Sao_Paulo');
+$data_atual = date("Y-m-d");
 
 // recebe os dados do formulario
 $email          = $_POST['email'];
