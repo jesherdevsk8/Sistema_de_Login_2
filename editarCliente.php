@@ -54,7 +54,7 @@ $estado         = $rows['estado'];
 
         <!-- row do formulario de login -->
         <div class="row formulario-login">
-            <div class="col-md-offset-2 col-md-8">
+            <div class="col-md-offset-4 col-md-4 col-xs-offset-2 col-xs-8">
                 <div class="panel panel-primary">
                     <div class="panel-heading">Editar Cliente</div>
                     <div class="panel-body">
