@@ -1,0 +1,53 @@
+version: '3'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sistema_login
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - mysql
+    restart: always
+    networks:
+      - sistema_login_network
+
+  mysql:
+    image: mysql:8.0
+    container_name: sistema_login_db
+    environment:
+      MYSQL_ROOT_PASSWORD: senha@123
+      MYSQL_DATABASE: logindb
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: senha@123
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./DB:/docker-entrypoint-initdb.d
+      - ./mysql-login-data:/var/lib/mysql
+    restart: always
+    networks:
+      - sistema_login_network
+
+  phpmyadmin:
+    image: phpmyadmin:5.2.1
+    container_name: sistema_login_phpmyadmin
+    restart: always
+    ports:
+      - 8081:80
+    environment:
+      - PMA_HOST=mysql
+      - PMA_PORT=3306
+    networks:
+      - sistema_login_network
+
+networks:
+  sistema_login_network:
+    driver: bridge
+
+volumes:
+  mysql-login-data:

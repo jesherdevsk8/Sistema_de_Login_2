@@ -1,10 +1,8 @@
 <?php
 
-// define('MYSQL_HOST','localhost:3307'); // local do banco de dados usb webserver
-define('MYSQL_HOST','localhost'); //local do banco de dados
-define('MYSQL_USER','jesher'); // nome de usuario
-// define('MYSQL_PASSWORD','usbw'); // senha de usuario usb webserver
-define('MYSQL_PASSWORD','123'); // senha de usuario
+define('MYSQL_HOST','mysql'); //local do banco de dados
+define('MYSQL_USER','admin'); // nome de usuario
+define('MYSQL_PASSWORD','senha@123'); // senha de usuario
 define('MYSQL_DB_NAME','logindb'); // nome do banco de dados
 
 try{

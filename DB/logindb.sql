@@ -21,6 +21,9 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `logindb`
 --
+CREATE DATABASE IF NOT EXISTS `logindb` 
+  CHARACTER SET utf8mb4 
+  COLLATE utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -67,8 +70,8 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id_usuario`, `email`, `senha`, `administrador`, `data_cadastro`) VALUES
-(1, 'jesher@gmail.com', '4297f44b13955235245b2497399d7a93', 's', '2022-03-24'),
-(2, 'bruno@hetzner.com', '4297f44b13955235245b2497399d7a93', 'n', '2022-04-14');
+(1, 'jesher@gmail.com', 'ada3c39413b4f6284c8301257812190e', 's', '2022-03-24'),
+(2, 'bruno@hetzner.com', 'ada3c39413b4f6284c8301257812190e', 'n', '2022-04-14');
 
 --
 -- Índices para tabelas despejadas
